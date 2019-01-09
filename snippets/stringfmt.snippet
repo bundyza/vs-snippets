@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>strfmt</Title>
+      <Shortcut>strfmt</Shortcut>
+      <Description>Code snippet for string.Format(...)</Description>
+      <Author>Alistair Lacy</Author>
+      <SnippetTypes>        
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>  
+        <Literal>
+          <ID>var</ID>
+          <ToolTip>The first value to be substituted in the format string.</ToolTip>
+          <Default>null</Default>
+        </Literal>        
+      </Declarations>    
+      <Code Language="csharp">
+        <![CDATA[string.Format("$end${0}", $var$)]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>  
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>strfmts</Title>
+      <Shortcut>strfmts</Shortcut>
+      <Description>Code snippet for string.Format(...)</Description>
+      <Author>Alistair Lacy</Author>
+      <SnippetTypes>
+        <SnippetType>SurroundsWith</SnippetType>        
+      </SnippetTypes>
+    </Header>
+    <Snippet>      
+      <Code Language="csharp">
+        <![CDATA[string.Format($selected$, null)]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

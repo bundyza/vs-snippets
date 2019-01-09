@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>streqi</Title>
+      <Shortcut>streqi</Shortcut>
+      <Description>Code snippet for case insensitive string equality check</Description>
+      <Author>Alistair Lacy</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>stringA</ID>
+          <ToolTip>The first string to be compared.</ToolTip>
+          <Default>stringA</Default>
+        </Literal>
+        <Literal>
+          <ID>stringB</ID>
+          <ToolTip>The second string to be compared.</ToolTip>
+          <Default>stringB</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[string.Equals($stringA$, $stringB$, StringComparison.OrdinalIgnoreCase)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>streq</Title>
+      <Shortcut>streq</Shortcut>
+      <Description>Code snippet for case sensitive string equality check</Description>
+      <Author>Alistair Lacy</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>stringA</ID>
+          <ToolTip>The first string to be compared.</ToolTip>
+          <Default>stringA</Default>
+        </Literal>
+        <Literal>
+          <ID>stringB</ID>
+          <ToolTip>The second string to be compared.</ToolTip>
+          <Default>stringB</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[string.Equals($stringA$, $stringB$, StringComparison.Ordinal)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>  
+</CodeSnippets>
